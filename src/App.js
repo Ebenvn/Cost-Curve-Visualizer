@@ -274,14 +274,22 @@ Filtered out items: ${rows.length - 1 - parsedData.length}
   return (
     <div style={{ fontFamily: 'Arial, sans-serif' }}>
       <div style={{ background: 'linear-gradient(to bottom, #333333, #1a1a1a)', color: 'white', padding: '20px', position: 'relative' }}>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/FM.jpeg" alt="Fraser McGill" style={{ width: '50px', marginRight: '20px' }} />
-          <h1>Fraser McGill Cost Curve Visualizer</h1>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
-          <p style={{ fontSize: '14px', marginRight: '10px' }}>Developed by</p>
-          <img src="/brandmark-design (3).png" alt="Vectr Labs" style={{ width: '150px' }} />
-        </div>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+  <img 
+    src={process.env.PUBLIC_URL + '/FM.jpeg'} 
+    alt="Fraser McGill" 
+    style={{ width: '50px', marginRight: '20px' }} 
+  />
+  <h1>Fraser McGill Cost Curve Visualizer</h1>
+</div>
+<div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
+  <p style={{ fontSize: '14px', marginRight: '10px' }}>Developed by</p>
+  <img 
+    src={process.env.PUBLIC_URL + '/brandmark-design (3).png'} 
+    alt="Vectr Labs" 
+    style={{ width: '150px' }} 
+  />
+</div>
         <div style={{ position: 'absolute', bottom: '5px', right: '10px', fontSize: '12px' }}>
           Version {VERSION} | Last updated: {LAST_EDIT}
         </div>
